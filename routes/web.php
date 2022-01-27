@@ -2,14 +2,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', fn() => view('home')); //8.1.1
-
 Route::view('contact', 'contact');
-
-
+Route::view('about', 'about');
 Route::view('profile', 'profile');
-    Route::get('about', function() {
-        $name = "Doni";
-        return view('about', [
-           'name' => $name,
-        ]);
-});
